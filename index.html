@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Espaço de eventos rústico em Tubarão, SC. Casamentos, mini weddings, formaturas, aniversários e confraternizações em meio à natureza, com gastronomia exclusiva e estrutura completa.">
+    <meta name="theme-color" content="#3a5a23">
+    <meta property="og:title" content="Colher de Pau - Gastronomia e Eventos">
+    <meta property="og:description" content="Espaço de eventos rústico em Tubarão, SC. Casamentos, formaturas, aniversários e confraternizações em meio à natureza.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/casamento-1.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <title>Colher de Pau - Gastronomia e Eventos | Tubarão SC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-map-marker-alt"></i> Rua Recanto das Águas, 44 - São Bernardo, Tubarão - SC</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-phone"><i class="fas fa-phone"></i> (48) 9999-9999</span>
+                <a href="https://www.instagram.com/colherdepaueventos/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/5548999999999" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🌿</span>
+                    <div class="logo-text">
+                        <strong>Colher de Pau</strong>
+                        <small>Gastronomia &amp; Eventos</small>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato" class="cta-nav">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('img/casamento-1.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('img/casamento-2.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('img/casamento-3.jpg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Desde 2014 realizando sonhos</p>
+                <h1>Eventos inesquecíveis em meio à <span>natureza</span></h1>
+                <p class="hero-description">Celebre seu grande momento no Colher de Pau, um espaço rústico e acolhedor pensado em cada detalhe para casamentos, formaturas e confraternizações.</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-primary">Solicite um Orçamento</a>
+                    <a href="#eventos" class="btn btn-secondary">Agende sua Visita</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dots" id="heroDots"></div>
+    </section>
+
+    <!-- Por que escolher -->
+    <section id="sobre" class="why-choose">
+        <div class="container">
+            <div class="leaf-decoration leaf-left">
+                <svg viewBox="0 0 200 600" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100 10 C100 100, 60 150, 80 250 C100 350, 60 400, 100 590" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <ellipse cx="78" cy="90" rx="32" ry="14" transform="rotate(-30 78 90)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <ellipse cx="118" cy="160" rx="36" ry="15" transform="rotate(25 118 160)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <ellipse cx="70" cy="240" rx="34" ry="14" transform="rotate(-20 70 240)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <ellipse cx="120" cy="320" rx="38" ry="16" transform="rotate(30 120 320)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <ellipse cx="75" cy="410" rx="32" ry="14" transform="rotate(-25 75 410)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <ellipse cx="115" cy="490" rx="34" ry="14" transform="rotate(20 115 490)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </div>
+
+            <div class="why-top">
+                <div class="why-text">
+                    <p class="section-eyebrow">Por que escolher o</p>
+                    <h2>Colher de Pau<span class="dot">?</span></h2>
+                    <p class="why-lead">Um espaço <strong>acolhedor, versátil</strong> e <strong>integrado à natureza</strong></p>
+                    <p class="why-desc">Há mais de 10 anos criando memórias e experiências surpreendentes em nossos clientes. Localizado em meio às árvores, com toda a infraestrutura necessária para que seu evento — casamento, mini wedding, formatura, aniversário ou confraternização — aconteça sem complicações, do início ao fim.</p>
+                    <div class="why-buttons">
+                        <a href="#contato" class="btn btn-primary">Solicite um Orçamento</a>
+                        <a href="#galeria" class="btn btn-outline">Conheça o Espaço</a>
+                    </div>
+                </div>
+                <div class="why-image">
+                    <img src="img/confrateternizacao-2.jpg" alt="Espaço Colher de Pau" loading="lazy" width="640" height="420">
+                </div>
+            </div>
+
+            <div class="features-circles">
+                <div class="feature-circle-item">
+                    <div class="circle-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M32 8 L32 56 M32 8 C20 8 12 16 12 28 C12 40 20 48 32 48 C44 48 52 40 52 28 C52 16 44 8 32 8 Z"/>
+                        </svg>
+                    </div>
+                    <h4>Ambiente <strong>Rústico</strong></h4>
+                    <p>Espaço acolhedor entre árvores e natureza</p>
+                </div>
+                <div class="feature-circle-item">
+                    <div class="circle-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 10 L20 30 M16 10 L16 30 M24 10 L24 30 M16 30 C16 36 24 36 24 30 M20 30 L20 54 M44 10 C36 10 36 24 44 28 L44 54 M44 10 L44 28"/>
+                        </svg>
+                    </div>
+                    <h4><strong>Gastronomia</strong> Exclusiva</h4>
+                    <p>Cardápio personalizado com qualidade</p>
+                </div>
+                <div class="feature-circle-item">
+                    <div class="circle-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="32" cy="32" r="24"/>
+                            <path d="M22 32 L29 39 L43 25"/>
+                        </svg>
+                    </div>
+                    <h4>Evento <strong>Completo</strong></h4>
+                    <p>Do planejamento à execução, sem complicações</p>
+                </div>
+                <div class="feature-circle-item">
+                    <div class="circle-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="10" y="24" width="44" height="28" rx="2"/>
+                            <path d="M10 24 L32 8 L54 24"/>
+                            <path d="M26 52 L26 38 L38 38 L38 52"/>
+                        </svg>
+                    </div>
+                    <h4>Infraestrutura <strong>Completa</strong></h4>
+                    <p>Espaço coberto, áreas externas e estacionamento</p>
+                </div>
+                <div class="feature-circle-item">
+                    <div class="circle-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M32 56 C32 56 12 42 12 26 C12 17 19 10 28 10 C30 10 32 11 32 11 C32 11 34 10 36 10 C45 10 52 17 52 26 C52 42 32 56 32 56 Z"/>
+                        </svg>
+                    </div>
+                    <h4>Feito com <strong>Amor</strong></h4>
+                    <p>Atenção e cuidado em cada detalhe do seu dia</p>
+                </div>
+                <div class="feature-circle-item">
+                    <div class="circle-icon">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M32 6 L38 22 L55 22 L42 33 L47 50 L32 40 L17 50 L22 33 L9 22 L26 22 Z"/>
+                        </svg>
+                    </div>
+                    <h4>Momentos <strong>Inesquecíveis</strong></h4>
+                    <p>Mais de 10 anos criando memórias especiais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos - alternating sections -->
+    <section id="eventos" class="eventos">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">Tipos de Evento</p>
+                <h2>Para cada <span>celebração</span>, o cenário perfeito</h2>
+            </div>
+
+            <!-- Casamento -->
+            <div class="event-block">
+                <div class="event-images">
+                    <img src="img/casamento-1.jpg" alt="Casamento no Colher de Pau" loading="lazy" width="640" height="320">
+                    <img src="img/casamento-5.jpg" alt="Decoração de casamento" loading="lazy" width="640" height="320">
+                </div>
+                <div class="event-text">
+                    <p class="section-eyebrow">01</p>
+                    <h3>Casamento dos <span>Sonhos</span></h3>
+                    <p class="event-lead">O cenário perfeito para tornar seu grande dia inesquecível</p>
+                    <p>O dia mais importante da sua vida merece um espaço à altura. Entre árvores e ambientes rústicos, cuidamos de cada detalhe — da cerimônia à festa — para que tudo aconteça com a magia que você sempre imaginou.</p>
+                    <a href="#contato" class="link-mais">Solicitar orçamento →</a>
+                </div>
+            </div>
+
+            <!-- Mini Wedding -->
+            <div class="event-block reverse">
+                <div class="event-images">
+                    <img src="img/casamento-3.jpg" alt="Mini Wedding" loading="lazy" width="640" height="320">
+                    <img src="img/casamento-6.jpg" alt="Cerimônia intimista" loading="lazy" width="640" height="320">
+                </div>
+                <div class="event-text">
+                    <p class="section-eyebrow">02</p>
+                    <h3>Mini <span>Wedding</span></h3>
+                    <p class="event-lead">Celebrações intimistas com toda a sofisticação</p>
+                    <p>Para quem prefere uma celebração mais reservada, com poucos convidados e muito significado. O mesmo cuidado, atenção aos detalhes e estrutura completa, em um formato pensado para momentos íntimos.</p>
+                    <a href="#contato" class="link-mais">Solicitar orçamento →</a>
+                </div>
+            </div>
+
+            <!-- Formatura -->
+            <div class="event-block">
+                <div class="event-images">
+                    <img src="img/formatura-1.jpg" alt="Formatura no Colher de Pau" loading="lazy" width="640" height="320">
+                    <img src="img/formatura-2.jpg" alt="Festa de formatura" loading="lazy" width="640" height="320">
+                </div>
+                <div class="event-text">
+                    <p class="section-eyebrow">03</p>
+                    <h3>Formatura &amp; <span>Aniversários</span></h3>
+                    <p class="event-lead">Conquistas e celebrações que merecem destaque</p>
+                    <p>De festas de formatura a aniversários de todas as idades, nosso espaço se adapta ao seu estilo de festa. Ambiente climatizado, área externa e toda a estrutura para que seus convidados se sintam à vontade.</p>
+                    <a href="#contato" class="link-mais">Solicitar orçamento →</a>
+                </div>
+            </div>
+
+            <!-- Confraternização -->
+            <div class="event-block reverse">
+                <div class="event-images">
+                    <img src="img/confrateternizacao-1.jpg" alt="Confraternização" loading="lazy" width="640" height="320">
+                    <img src="img/confrateternizacao-3.jpg" alt="Evento corporativo" loading="lazy" width="640" height="320">
+                </div>
+                <div class="event-text">
+                    <p class="section-eyebrow">04</p>
+                    <h3>Confraternizações &amp; <span>Eventos Corporativos</span></h3>
+                    <p class="event-lead">O ambiente certo para reunir pessoas e fortalecer laços</p>
+                    <p>Espaço ideal para confraternizações de empresas, eventos sociais e encontros entre amigos e família. Buffet exclusivo, serviço de bar completo e equipe própria para que você só precise se preocupar em aproveitar.</p>
+                    <a href="#contato" class="link-mais">Solicitar orçamento →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">Galeria</p>
+                <h2>Momentos que deixaram <span>saudades</span></h2>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="casamento">Casamento</button>
+                <button class="filter-btn" data-filter="formatura">Formatura</button>
+                <button class="filter-btn" data-filter="confrateternizacao">Confraternização</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="leaf-decoration leaf-right">
+            <svg viewBox="0 0 200 600" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100 10 C100 100, 140 150, 120 250 C100 350, 140 400, 100 590" fill="none" stroke="currentColor" stroke-width="2"/>
+                <ellipse cx="122" cy="90" rx="32" ry="14" transform="rotate(30 122 90)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <ellipse cx="82" cy="160" rx="36" ry="15" transform="rotate(-25 82 160)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <ellipse cx="130" cy="240" rx="34" ry="14" transform="rotate(20 130 240)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <ellipse cx="80" cy="320" rx="38" ry="16" transform="rotate(-30 80 320)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <ellipse cx="125" cy="410" rx="32" ry="14" transform="rotate(25 125 410)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <ellipse cx="85" cy="490" rx="34" ry="14" transform="rotate(-20 85 490)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">Contato</p>
+                <h2>Vamos planejar seu <span>evento?</span></h2>
+            </div>
+
+            <div class="contato-wrapper">
+                <div class="contato-info">
+                    <div class="info-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Localização</h4>
+                        <p>Rua Recanto das Águas, 44<br>São Bernardo, Tubarão<br>Santa Catarina, 88702-100</p>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-phone"></i>
+                        <h4>Telefone / WhatsApp</h4>
+                        <p><a href="https://wa.me/5548999999999" target="_blank">(48) 9999-9999</a></p>
+                    </div>
+                    <div class="info-box">
+                        <i class="fab fa-instagram"></i>
+                        <h4>Instagram</h4>
+                        <p><a href="https://www.instagram.com/colherdepaueventos/" target="_blank">@colherdepaueventos</a></p>
+                    </div>
+                </div>
+
+                <form class="contato-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nome" class="sr-only">Seu Nome</label>
+                        <input type="text" id="nome" name="name" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Seu E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone" class="sr-only">Seu Telefone/WhatsApp</label>
+                        <input type="tel" id="telefone" name="phone" placeholder="Seu Telefone/WhatsApp">
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoEvento" class="sr-only">Tipo de Evento</label>
+                        <select id="tipoEvento" name="eventType" required>
+                            <option value="">Tipo de Evento</option>
+                            <option value="casamento">Casamento</option>
+                            <option value="miniwedding">Mini Wedding</option>
+                            <option value="formatura">Formatura</option>
+                            <option value="aniversario">Aniversário</option>
+                            <option value="confraternizacao">Confraternização</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group full">
+                        <label for="mensagem" class="sr-only">Sua Mensagem</label>
+                        <textarea id="mensagem" name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🌿</span>
+                        <div class="logo-text">
+                            <strong>Colher de Pau</strong>
+                            <small>Gastronomia &amp; Eventos</small>
+                        </div>
+                    </div>
+                    <p>Desde 2014 realizando sonhos em um espaço rústico e acolhedor, integrado à natureza.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Quem Somos</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Recanto das Águas, 44<br>Tubarão, SC</p>
+                    <p><i class="fas fa-phone"></i> <a href="https://wa.me/5548999999999">(48) 9999-9999</a></p>
+                    <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/colherdepaueventos/" target="_blank">@colherdepaueventos</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Colher de Pau - Gastronomia e Eventos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5548999999999" class="whatsapp-button" target="_blank" title="Chame no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
