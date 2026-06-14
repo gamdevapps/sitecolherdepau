@@ -1,0 +1,4 @@
+# Backups e arquivos temporários gerados durante otimização de imagens
+img_original_backup/
+img/*.jpg~
+.DS_Store
