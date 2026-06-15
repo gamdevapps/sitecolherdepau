@@ -6,12 +6,28 @@ const galleryData = [
     { src: './img/casamento-4.jpg', category: 'casamento', title: 'Casamento' },
     { src: './img/casamento-5.jpg', category: 'casamento', title: 'Casamento' },
     { src: './img/casamento-6.jpg', category: 'casamento', title: 'Casamento' },
+    { src: './img/casamento-7.jpg', category: 'casamento', title: 'Casamento' },
+    { src: './img/casamento-8.jpg', category: 'casamento', title: 'Casamento' },
+    { src: './img/casamento-9.jpg', category: 'casamento', title: 'Casamento' },
+    { src: './img/casamento-10.jpg', category: 'casamento', title: 'Casamento' },
+    { src: './img/casamento-11.jpg', category: 'casamento', title: 'Casamento' },
+    { src: './img/casamento-12.jpg', category: 'casamento', title: 'Casamento' },
+    { src: './img/casamento-13.jpg', category: 'casamento', title: 'Casamento' },
+    { src: './img/casamento-14.jpg', category: 'casamento', title: 'Casamento' },
     { src: './img/formatura-1.jpg', category: 'formatura', title: 'Formatura' },
     { src: './img/formatura-2.jpg', category: 'formatura', title: 'Formatura' },
     { src: './img/formatura-3.jpg', category: 'formatura', title: 'Formatura' },
+    { src: './img/formatura-4.jpg', category: 'formatura', title: 'Formatura' },
     { src: './img/confrateternizacao-1.jpg', category: 'confrateternizacao', title: 'Confraternização' },
     { src: './img/confrateternizacao-2.jpg', category: 'confrateternizacao', title: 'Confraternização' },
-    { src: './img/confrateternizacao-3.jpg', category: 'confrateternizacao', title: 'Confraternização' }
+    { src: './img/confrateternizacao-3.jpg', category: 'confrateternizacao', title: 'Confraternização' },
+    { src: './img/confrateternizacao-4.jpg', category: 'confrateternizacao', title: 'Confraternização' },
+    { src: './img/confrateternizacao-5.jpg', category: 'confrateternizacao', title: 'Confraternização' },
+    { src: './img/confrateternizacao-6.jpg', category: 'confrateternizacao', title: 'Confraternização' },
+    { src: './img/confrateternizacao-7.jpg', category: 'confrateternizacao', title: 'Confraternização' },
+    { src: './img/confrateternizacao-8.jpg', category: 'confrateternizacao', title: 'Confraternização' },
+    { src: './img/confrateternizacao-9.jpg', category: 'confrateternizacao', title: 'Confraternização' },
+    { src: './img/confrateternizacao-10.jpg', category: 'confrateternizacao', title: 'Confraternização' }
 ];
 
 // Hero slider
@@ -51,6 +67,66 @@ function goToSlide(n) {
 
 // Auto slide every 6 seconds
 setInterval(nextSlide, 6000);
+
+// Espaço carousel
+const carouselTrack = document.getElementById('carouselTrack');
+const carouselSlides = document.querySelectorAll('.carousel-slide');
+const totalCarouselSlides = carouselSlides.length;
+let carouselIndex = 0;
+let carouselAutoplay;
+
+function updateCarousel() {
+    carouselTrack.style.transform = `translateX(-${carouselIndex * 100}%)`;
+    document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+        dot.classList.toggle('active', index === carouselIndex);
+    });
+}
+
+function goToCarouselSlide(n) {
+    carouselIndex = (n + totalCarouselSlides) % totalCarouselSlides;
+    updateCarousel();
+}
+
+function nextCarouselSlide() {
+    goToCarouselSlide(carouselIndex + 1);
+}
+
+function prevCarouselSlide() {
+    goToCarouselSlide(carouselIndex - 1);
+}
+
+function initCarouselDots() {
+    const dotsContainer = document.getElementById('carouselDots');
+    if (!dotsContainer) return;
+    for (let i = 0; i < totalCarouselSlides; i++) {
+        const dot = document.createElement('button');
+        dot.className = `carousel-dot ${i === 0 ? 'active' : ''}`;
+        dot.setAttribute('aria-label', `Ir para slide ${i + 1}`);
+        dot.addEventListener('click', () => {
+            goToCarouselSlide(i);
+            resetCarouselAutoplay();
+        });
+        dotsContainer.appendChild(dot);
+    }
+}
+
+function resetCarouselAutoplay() {
+    clearInterval(carouselAutoplay);
+    carouselAutoplay = setInterval(nextCarouselSlide, 5000);
+}
+
+if (carouselTrack && totalCarouselSlides > 0) {
+    initCarouselDots();
+    document.getElementById('carouselNext').addEventListener('click', () => {
+        nextCarouselSlide();
+        resetCarouselAutoplay();
+    });
+    document.getElementById('carouselPrev').addEventListener('click', () => {
+        prevCarouselSlide();
+        resetCarouselAutoplay();
+    });
+    resetCarouselAutoplay();
+}
 
 // Initialize hero dots on page load
 document.addEventListener('DOMContentLoaded', () => {
