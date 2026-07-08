@@ -5,24 +5,30 @@ Site responsivo e moderno para o espaço de eventos Colher de Pau, com tema rús
 ## 📋 Características
 
 ✅ Design responsivo (funciona em desktop, tablet e mobile)
-✅ Galeria de fotos com filtros por tipo de evento
-✅ Seções: Início, Sobre, Tipos de Eventos, Galeria e Contato
+✅ Galeria de fotos com filtros por tipo de evento e lightbox (ampliar foto, navegação por teclado e swipe)
+✅ Seções: Início, Sobre, Tipos de Eventos, Nosso Espaço, Galeria e Contato
 ✅ Tema rústico com cores verde e marrom
-✅ Animações suaves e intuitivas
+✅ Animações suaves (Ken Burns no hero, entrada escalonada ao rolar, respeita prefers-reduced-motion)
 ✅ Menu mobile com hamburger
-✅ Formulário de contato (integração com serviço externo recomendada)
+✅ Formulário de contato integrado ao WhatsApp (abre a conversa com a mensagem pronta)
+✅ SEO completo: dados estruturados (EventVenue/LocalBusiness), Open Graph, Twitter Card, canonical, robots.txt e sitemap.xml
+✅ Ícones SVG inline (sem dependência do Font Awesome — carregamento mais rápido)
+✅ Mapa do Google integrado na seção de contato
 
 ## 🗂️ Estrutura de Arquivos
 
 ```
 sitecolherdepau/
-├── index.html          # Página principal
-├── styles.css          # Estilos e responsividade
-├── script.js           # Funcionalidades JavaScript
+├── index.html          # Página principal (SEO: JSON-LD, Open Graph, canonical)
+├── styles.css          # Estilos, animações e responsividade
+├── script.js           # Slider, carrossel, galeria com lightbox, formulário → WhatsApp
+├── favicon.svg         # Ícone do site
+├── robots.txt          # Instruções para buscadores
+├── sitemap.xml         # Mapa do site para indexação
 ├── img/                # Pasta com fotos dos eventos
-│   ├── casamento-1.jpg até casamento-6.jpg
-│   ├── formatura-1.jpg até formatura-3.jpg
-│   └── confrateternizacao-1.jpg até confrateternizacao-3.jpg
+│   ├── casamento-*.jpg
+│   ├── formatura-*.jpg
+│   └── confrateternizacao-*.jpg
 └── README.md           # Este arquivo
 ```
 
